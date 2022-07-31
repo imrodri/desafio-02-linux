@@ -64,3 +64,38 @@ drwxrwxr-x 5 osboxes osboxes 4096 Jul 30 17:56 ..
 -rw-r--r-- 1 osboxes osboxes    0 Jul 30 17:58 archiv8
 -rw-rw-r-- 1 osboxes osboxes    0 Jul 30 17:58 archiv9
 ```
+
+
+### Modifing permissions
+
+
+```
+~/Downloads/desafio-02-linux/reto02 (develop) » chmod o+r archiv1                                                                                          
+~/Downloads/desafio-02-linux/reto02 (develop) » chmod u-w archiv2                                                                                          
+~/Downloads/desafio-02-linux/reto02 (develop) » chmod a-x archiv3                                                                                          
+~/Downloads/desafio-02-linux/reto02 (develop*) » chmod go-r archiv4                                                                                        
+~/Downloads/desafio-02-linux/reto02 (develop*) » chmod g-r,o+wx archiv5                                                                                    
+~/Downloads/desafio-02-linux/reto02 (develop*) » chmod u+w,o-r archiv6                                                                                     
+~/Downloads/desafio-02-linux/reto02 (develop*) » chmod u+w,g+x,o-x,o+w archiv7                                                                             
+~/Downloads/desafio-02-linux/reto02 (develop*) » chmod u-rw,g-r archiv8                                                                                    
+~/Downloads/desafio-02-linux/reto02 (develop*) » chmod u+rw,g+rw,o+r archiv9 
+```
+
+
+list files 
+
+```
+~/Downloads/desafio-02-linux/reto02 (develop*) » ls -la                                                                                              127 ↵ osboxes@osboxes
+total 8
+drwxrwxr-x 2 osboxes osboxes 4096 Jul 30 17:58 .
+drwxrwxr-x 5 osboxes osboxes 4096 Jul 30 17:56 ..
+-rwx---r-- 1 osboxes osboxes    0 Jul 30 17:56 archiv1
+-r-------- 1 osboxes osboxes    0 Jul 30 17:57 archiv2
+-rw-rw-rw- 1 osboxes osboxes    0 Jul 30 17:57 archiv3
+-rwx-w---- 1 osboxes osboxes    0 Jul 30 17:57 archiv4
+-rwx----wx 1 osboxes osboxes    0 Jul 30 17:57 archiv5
+-rwxrw---- 1 osboxes osboxes    0 Jul 30 17:57 archiv6
+-rw---x-w- 1 osboxes osboxes    0 Jul 30 17:57 archiv7
+-------r-- 1 osboxes osboxes    0 Jul 30 17:58 archiv8
+-rw-rw-r-- 1 osboxes osboxes    0 Jul 30 17:58 archiv9
+```
