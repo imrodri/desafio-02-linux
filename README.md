@@ -44,7 +44,7 @@ drwxrwxr-x 5 osboxes osboxes 4096 Jul 30 17:56 ..
 
 ~/Downloads/desafio-02-linux/reto02 (develop*) » chmod u=rx,g=rw,o=r archiv6                                                                               
 
-~/Downloads/desafio-02-linux/reto02 (develop*) » chmod u=r,g=,u=x archiv7                                                                                  
+~/Downloads/desafio-02-linux/reto02 (develop*) » chmod u=r,g=,o=x archiv7                                                                                 
 
 ~/Downloads/desafio-02-linux/reto02 (develop*) » chmod u=rw,g=r,o=r archiv8                                                                                
 
@@ -60,7 +60,7 @@ drwxrwxr-x 5 osboxes osboxes 4096 Jul 30 17:56 ..
 -rwxrw-r-- 1 osboxes osboxes    0 Jul 30 17:57 archiv4
 -rwxr----- 1 osboxes osboxes    0 Jul 30 17:57 archiv5
 -r-xrw-r-- 1 osboxes osboxes    0 Jul 30 17:57 archiv6
----x------ 1 osboxes osboxes    0 Jul 30 17:57 archiv7
+-r-------x 1 osboxes osboxes    0 Jul 30 17:57 archiv7
 -rw-r--r-- 1 osboxes osboxes    0 Jul 30 17:58 archiv8
 -rw-rw-r-- 1 osboxes osboxes    0 Jul 30 17:58 archiv9
 ```
